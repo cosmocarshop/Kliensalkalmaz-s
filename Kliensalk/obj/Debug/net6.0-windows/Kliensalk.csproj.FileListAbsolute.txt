@@ -15,3 +15,4 @@ C:\Users\szabo\Documents\GitHub\Kliensalkalmaz-s\Kliensalk\obj\Debug\net6.0-wind
 C:\Users\szabo\Documents\GitHub\Kliensalkalmaz-s\Kliensalk\obj\Debug\net6.0-windows\Kliensalk.pdb
 C:\Users\szabo\Documents\GitHub\Kliensalkalmaz-s\Kliensalk\obj\Debug\net6.0-windows\Kliensalk.genruntimeconfig.cache
 C:\Users\szabo\Documents\GitHub\Kliensalkalmaz-s\Kliensalk\obj\Debug\net6.0-windows\ref\Kliensalk.dll
+C:\Users\szabo\Documents\GitHub\Kliensalkalmaz-s\Kliensalk\obj\Debug\net6.0-windows\Kliensalk.sourcelink.json

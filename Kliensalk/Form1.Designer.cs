@@ -28,14 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             monthCalendar1 = new MonthCalendar();
             Frissit = new Button();
             button2 = new Button();
             button1 = new Button();
             dataGridView1 = new DataGridView();
-            Button Szerkeszt = new Button();
+            bindingSource1 = new BindingSource(components);
+            Szerkeszt = new Button();
             Torles = new Button();
+            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             SuspendLayout();
             // 
             // monthCalendar1
@@ -43,6 +47,7 @@
             monthCalendar1.Location = new Point(18, 63);
             monthCalendar1.Name = "monthCalendar1";
             monthCalendar1.TabIndex = 0;
+            monthCalendar1.DateChanged += monthCalendar1_DateChanged;
             // 
             // Frissit
             // 
@@ -52,6 +57,7 @@
             Frissit.TabIndex = 1;
             Frissit.Text = "Frissít";
             Frissit.UseVisualStyleBackColor = true;
+            Frissit.Click += Frissit_Click;
             // 
             // button2
             // 
@@ -61,6 +67,7 @@
             button2.TabIndex = 2;
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -74,7 +81,9 @@
             // dataGridView1
             // 
             dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView1.AutoGenerateColumns = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.DataSource = bindingSource1;
             dataGridView1.Location = new Point(274, 22);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
@@ -82,15 +91,16 @@
             dataGridView1.Size = new Size(504, 330);
             dataGridView1.TabIndex = 4;
             // 
-            // Szerkesztes
+            // Szerkeszt
             // 
             Szerkeszt.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             Szerkeszt.Location = new Point(274, 389);
-            Szerkeszt.Name = "Szerkesztes";
+            Szerkeszt.Name = "Szerkeszt";
             Szerkeszt.Size = new Size(94, 29);
             Szerkeszt.TabIndex = 5;
             Szerkeszt.Text = "Szerkesztés";
             Szerkeszt.UseVisualStyleBackColor = true;
+            Szerkeszt.Click += Szerkeszt_Click;
             // 
             // Torles
             // 
@@ -101,12 +111,22 @@
             Torles.TabIndex = 6;
             Torles.Text = "Törlés";
             Torles.UseVisualStyleBackColor = true;
+            Torles.Click += Torles_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(18, 391);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(229, 27);
+            textBox1.TabIndex = 7;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox1);
             Controls.Add(Torles);
             Controls.Add(Szerkeszt);
             Controls.Add(dataGridView1);
@@ -118,7 +138,9 @@
             Text = "Form1";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -130,5 +152,8 @@
         private DataGridView dataGridView1;
         private Button button3;
         private Button Torles;
+        private BindingSource bindingSource1;
+        private Button Szerkeszt;
+        private TextBox textBox1;
     }
 }
