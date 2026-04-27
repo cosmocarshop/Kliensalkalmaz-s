@@ -34,11 +34,6 @@
             button2 = new Button();
             button1 = new Button();
             dataGridView1 = new DataGridView();
-            bindingSource1 = new BindingSource(components);
-            Szerkeszt = new Button();
-            Torles = new Button();
-            textBox1 = new TextBox();
-            bookingBindingSource = new BindingSource(components);
             bookingIdDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             moduleIdDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             startDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
@@ -49,9 +44,15 @@
             commentDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             statusDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             serializedProductBvinsDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            bookingBindingSource = new BindingSource(components);
+            bindingSource1 = new BindingSource(components);
+            Szerkeszt = new Button();
+            Torles = new Button();
+            textBox1 = new TextBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bookingBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             SuspendLayout();
             // 
             // monthCalendar1
@@ -101,42 +102,8 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(504, 330);
+            dataGridView1.Size = new Size(521, 358);
             dataGridView1.TabIndex = 4;
-            // 
-            // Szerkeszt
-            // 
-            Szerkeszt.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            Szerkeszt.Location = new Point(274, 389);
-            Szerkeszt.Name = "Szerkeszt";
-            Szerkeszt.Size = new Size(94, 29);
-            Szerkeszt.TabIndex = 5;
-            Szerkeszt.Text = "Szerkesztés";
-            Szerkeszt.UseVisualStyleBackColor = true;
-            Szerkeszt.Click += Szerkeszt_Click;
-            // 
-            // Torles
-            // 
-            Torles.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            Torles.Location = new Point(386, 389);
-            Torles.Name = "Torles";
-            Torles.Size = new Size(94, 29);
-            Torles.TabIndex = 6;
-            Torles.Text = "Törlés";
-            Torles.UseVisualStyleBackColor = true;
-            Torles.Click += Torles_Click;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(18, 391);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(229, 27);
-            textBox1.TabIndex = 7;
-            textBox1.TextChanged += textBox1_TextChanged;
-            // 
-            // bookingBindingSource
-            // 
-            bookingBindingSource.DataSource = typeof(Booking);
             // 
             // bookingIdDataGridViewTextBoxColumn
             // 
@@ -218,11 +185,55 @@
             serializedProductBvinsDataGridViewTextBoxColumn.Name = "serializedProductBvinsDataGridViewTextBoxColumn";
             serializedProductBvinsDataGridViewTextBoxColumn.Width = 125;
             // 
+            // bookingBindingSource
+            // 
+            bookingBindingSource.DataSource = typeof(Booking);
+            // 
+            // Szerkeszt
+            // 
+            Szerkeszt.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            Szerkeszt.Location = new Point(274, 417);
+            Szerkeszt.Name = "Szerkeszt";
+            Szerkeszt.Size = new Size(94, 29);
+            Szerkeszt.TabIndex = 5;
+            Szerkeszt.Text = "Szerkesztés";
+            Szerkeszt.UseVisualStyleBackColor = true;
+            Szerkeszt.Click += Szerkeszt_Click;
+            // 
+            // Torles
+            // 
+            Torles.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            Torles.Location = new Point(386, 417);
+            Torles.Name = "Torles";
+            Torles.Size = new Size(94, 29);
+            Torles.TabIndex = 6;
+            Torles.Text = "Törlés";
+            Torles.UseVisualStyleBackColor = true;
+            Torles.Click += Torles_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(12, 417);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(229, 27);
+            textBox1.TabIndex = 7;
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(18, 394);
+            label1.Name = "label1";
+            label1.Size = new Size(52, 20);
+            label1.TabIndex = 8;
+            label1.Text = "Name:";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(817, 478);
+            Controls.Add(label1);
             Controls.Add(textBox1);
             Controls.Add(Torles);
             Controls.Add(Szerkeszt);
@@ -235,8 +246,8 @@
             Text = "Form1";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
             ((System.ComponentModel.ISupportInitialize)bookingBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -264,5 +275,6 @@
         private DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn serializedProductBvinsDataGridViewTextBoxColumn;
         private BindingSource bookingBindingSource;
+        private Label label1;
     }
 }
