@@ -7,12 +7,20 @@
       "RelativeMoniker": "D:0:0:{9993C034-D3BF-CCA6-AA5F-F6D631ABE56C}|Kliensalk\\Kliensalk.csproj|solutionrelative:kliensalk\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9993C034-D3BF-CCA6-AA5F-F6D631ABE56C}|Kliensalk\\Kliensalk.csproj|c:\\users\\szabo\\documents\\github\\kliensalkalmaz-s\\kliensalk\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9993C034-D3BF-CCA6-AA5F-F6D631ABE56C}|Kliensalk\\Kliensalk.csproj|C:\\Users\\szabo\\Documents\\GitHub\\Kliensalkalmaz-s\\kliensalk\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9993C034-D3BF-CCA6-AA5F-F6D631ABE56C}|Kliensalk\\Kliensalk.csproj|solutionrelative:kliensalk\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9993C034-D3BF-CCA6-AA5F-F6D631ABE56C}|Kliensalk\\Kliensalk.csproj|C:\\Users\\szabo\\Documents\\GitHub\\Kliensalkalmaz-s\\kliensalk\\szerkesztes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9993C034-D3BF-CCA6-AA5F-F6D631ABE56C}|Kliensalk\\Kliensalk.csproj|solutionrelative:kliensalk\\szerkesztes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9993C034-D3BF-CCA6-AA5F-F6D631ABE56C}|Kliensalk\\Kliensalk.csproj|c:\\users\\szabo\\documents\\github\\kliensalkalmaz-s\\kliensalk\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9993C034-D3BF-CCA6-AA5F-F6D631ABE56C}|Kliensalk\\Kliensalk.csproj|solutionrelative:kliensalk\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9993C034-D3BF-CCA6-AA5F-F6D631ABE56C}|Kliensalk\\Kliensalk.csproj|c:\\users\\szabo\\documents\\github\\kliensalkalmaz-s\\kliensalk\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9993C034-D3BF-CCA6-AA5F-F6D631ABE56C}|Kliensalk\\Kliensalk.csproj|solutionrelative:kliensalk\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9993C034-D3BF-CCA6-AA5F-F6D631ABE56C}|Kliensalk\\Kliensalk.csproj|c:\\users\\szabo\\documents\\github\\kliensalkalmaz-s\\kliensalk\\kliensalk.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -34,8 +42,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\szabo\\Documents\\GitHub\\Kliensalkalmaz-s\\Kliensalk\\Booking.cs",
+              "RelativeDocumentMoniker": "Kliensalk\\Booking.cs",
+              "ToolTip": "C:\\Users\\szabo\\Documents\\GitHub\\Kliensalkalmaz-s\\Kliensalk\\Booking.cs",
+              "RelativeToolTip": "Kliensalk\\Booking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T19:59:37.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Loginresponse.cs",
+              "DocumentMoniker": "C:\\Users\\szabo\\Documents\\GitHub\\Kliensalkalmaz-s\\Kliensalk\\Loginresponse.cs",
+              "RelativeDocumentMoniker": "Kliensalk\\Loginresponse.cs",
+              "ToolTip": "C:\\Users\\szabo\\Documents\\GitHub\\Kliensalkalmaz-s\\Kliensalk\\Loginresponse.cs",
+              "RelativeToolTip": "Kliensalk\\Loginresponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T19:42:07.467Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -67,14 +99,14 @@
               "RelativeDocumentMoniker": "Kliensalk\\Form1.cs",
               "ToolTip": "C:\\Users\\szabo\\Documents\\GitHub\\Kliensalkalmaz-s\\Kliensalk\\Form1.cs*",
               "RelativeToolTip": "Kliensalk\\Form1.cs*",
-              "ViewState": "AgIAABAAAAAAAAAAAAAswCIAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwA8AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-27T14:19:27.404Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Kliensalk.csproj",
               "DocumentMoniker": "C:\\Users\\szabo\\Documents\\GitHub\\Kliensalkalmaz-s\\Kliensalk\\Kliensalk.csproj",
               "RelativeDocumentMoniker": "Kliensalk\\Kliensalk.csproj",
@@ -86,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Szerkesztes.cs",
               "DocumentMoniker": "C:\\Users\\szabo\\Documents\\GitHub\\Kliensalkalmaz-s\\Kliensalk\\Szerkesztes.cs",
               "RelativeDocumentMoniker": "Kliensalk\\Szerkesztes.cs",
@@ -98,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\szabo\\Documents\\GitHub\\Kliensalkalmaz-s\\Kliensalk\\Program.cs",
               "RelativeDocumentMoniker": "Kliensalk\\Program.cs",
