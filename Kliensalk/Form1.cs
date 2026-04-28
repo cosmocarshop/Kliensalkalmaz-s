@@ -114,7 +114,7 @@ namespace Kliensalk
             }
             else
             {
-                
+
 
                 var torlendo = bookingBindingSource.Current as Booking;
                 if (torlendo == null) return;
@@ -204,14 +204,14 @@ namespace Kliensalk
                 "http://74.178.92.39/DesktopModules/BookingModule/API/BookingsApi/GetAll?moduleId=0"
             );
             foglalasok = bookings!;
-            
+
 
         }
         private async Task adatok2()
         {
             //Ne töltse be az előző foglalásokat, 
             foglalasok = foglalasok
-                .Where(f => f.Start >= DateTime.Now)
+                .Where(f => f.Start.Date >= DateTime.Now.Date)
                 .ToList();
 
             //jelölje ki csak a jövőbeli foglalásokat
@@ -224,6 +224,8 @@ namespace Kliensalk
 
             bookingBindingSource.DataSource = foglalasok;
             bookingBindingSource.ResetBindings(false);
+
+            BeallitGridOszlopok();
         }
 
         private async void Frissit_Click(object sender, EventArgs e)
@@ -253,12 +255,64 @@ namespace Kliensalk
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //var uniqueList = foglalasok
-            //    .GroupBy(x => x.TargetColumn)
-            //    .Select(group => group.First())
-            //    .ToList();
+            string kulcs = "6a4d30fb-c55f-4250-83b9-4e67d8e48045";
+            var kivalasztott = foglalasok
+                .Where(x => x.ProductBvins.Contains(kulcs))
+                .ToList();
 
-            //bindingSource1.DataSource = uniqueList;
+            bookingBindingSource.DataSource = kivalasztott;
+            bookingBindingSource.ResetBindings(false);
+
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string kulcs = "ba460cc2-a9d3-47e4-974f-bbc14aa2a313";
+            var kivalasztott = foglalasok
+                .Where(x => x.ProductBvins.Contains(kulcs))
+                .ToList();
+
+            bookingBindingSource.DataSource = kivalasztott;
+            bookingBindingSource.ResetBindings(false);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string kulcs = "2eda0eeb-5c1f-4dbb-a390-9c528d52dcd7";
+            var kivalasztott = foglalasok
+                .Where(x => x.ProductBvins.Contains(kulcs))
+                .ToList();
+
+            bookingBindingSource.DataSource = kivalasztott;
+            bookingBindingSource.ResetBindings(false);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string kulcs = "b9f7bc5c-8efa-4a1f-92d0-e8763f8c894d";
+            var kivalasztott = foglalasok
+                .Where(x => x.ProductBvins.Contains(kulcs))
+                .ToList();
+
+            bookingBindingSource.DataSource = kivalasztott;
+            bookingBindingSource.ResetBindings(false);
+        }
+        private void BeallitGridOszlopok()
+        {
+            dataGridView1.AutoGenerateColumns = true;
+
+            if (dataGridView1.Columns["ProductBvins"] != null)
+                dataGridView1.Columns["ProductBvins"].Visible = false;
+
+            if (dataGridView1.Columns["SerializedProductBvins"] != null)
+                dataGridView1.Columns["SerializedProductBvins"].Visible = false;
+
+            if (dataGridView1.Columns["Termekek"] != null)
+            {
+                dataGridView1.Columns["Termekek"].HeaderText = "Termékek";
+                dataGridView1.Columns["Termekek"].Visible = true;
+            }
         }
     }
 }

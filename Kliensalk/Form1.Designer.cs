@@ -34,6 +34,14 @@
             button2 = new Button();
             button1 = new Button();
             dataGridView1 = new DataGridView();
+            bookingBindingSource = new BindingSource(components);
+            bindingSource1 = new BindingSource(components);
+            Szerkeszt = new Button();
+            Torles = new Button();
+            textBox1 = new TextBox();
+            label1 = new Label();
+            button3 = new Button();
+            button4 = new Button();
             bookingIdDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             moduleIdDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             startDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
@@ -44,12 +52,6 @@
             commentDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             statusDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             serializedProductBvinsDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            bookingBindingSource = new BindingSource(components);
-            bindingSource1 = new BindingSource(components);
-            Szerkeszt = new Button();
-            Torles = new Button();
-            textBox1 = new TextBox();
-            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bookingBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
@@ -76,25 +78,27 @@
             // 
             button2.Location = new Point(18, 282);
             button2.Name = "button2";
-            button2.Size = new Size(94, 29);
+            button2.Size = new Size(220, 29);
             button2.TabIndex = 2;
-            button2.Text = "button2";
+            button2.Text = "Belső tisztítás";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
             // button1
             // 
-            button1.Location = new Point(18, 330);
+            button1.Location = new Point(18, 317);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(220, 29);
             button1.TabIndex = 3;
-            button1.Text = "button1";
+            button1.Text = "Külső mosás";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // dataGridView1
             // 
             dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { bookingIdDataGridViewTextBoxColumn, moduleIdDataGridViewTextBoxColumn, startDataGridViewTextBoxColumn, endDataGridViewTextBoxColumn, nameDataGridViewTextBoxColumn, emailDataGridViewTextBoxColumn, phoneNrDataGridViewTextBoxColumn, commentDataGridViewTextBoxColumn, statusDataGridViewTextBoxColumn, serializedProductBvinsDataGridViewTextBoxColumn });
             dataGridView1.DataSource = bookingBindingSource;
@@ -102,88 +106,8 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(521, 358);
+            dataGridView1.Size = new Size(709, 409);
             dataGridView1.TabIndex = 4;
-            // 
-            // bookingIdDataGridViewTextBoxColumn
-            // 
-            bookingIdDataGridViewTextBoxColumn.DataPropertyName = "BookingId";
-            bookingIdDataGridViewTextBoxColumn.HeaderText = "BookingId";
-            bookingIdDataGridViewTextBoxColumn.MinimumWidth = 6;
-            bookingIdDataGridViewTextBoxColumn.Name = "bookingIdDataGridViewTextBoxColumn";
-            bookingIdDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // moduleIdDataGridViewTextBoxColumn
-            // 
-            moduleIdDataGridViewTextBoxColumn.DataPropertyName = "ModuleId";
-            moduleIdDataGridViewTextBoxColumn.HeaderText = "ModuleId";
-            moduleIdDataGridViewTextBoxColumn.MinimumWidth = 6;
-            moduleIdDataGridViewTextBoxColumn.Name = "moduleIdDataGridViewTextBoxColumn";
-            moduleIdDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // startDataGridViewTextBoxColumn
-            // 
-            startDataGridViewTextBoxColumn.DataPropertyName = "Start";
-            startDataGridViewTextBoxColumn.HeaderText = "Start";
-            startDataGridViewTextBoxColumn.MinimumWidth = 6;
-            startDataGridViewTextBoxColumn.Name = "startDataGridViewTextBoxColumn";
-            startDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // endDataGridViewTextBoxColumn
-            // 
-            endDataGridViewTextBoxColumn.DataPropertyName = "End";
-            endDataGridViewTextBoxColumn.HeaderText = "End";
-            endDataGridViewTextBoxColumn.MinimumWidth = 6;
-            endDataGridViewTextBoxColumn.Name = "endDataGridViewTextBoxColumn";
-            endDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            nameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            nameDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            emailDataGridViewTextBoxColumn.MinimumWidth = 6;
-            emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            emailDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // phoneNrDataGridViewTextBoxColumn
-            // 
-            phoneNrDataGridViewTextBoxColumn.DataPropertyName = "PhoneNr";
-            phoneNrDataGridViewTextBoxColumn.HeaderText = "PhoneNr";
-            phoneNrDataGridViewTextBoxColumn.MinimumWidth = 6;
-            phoneNrDataGridViewTextBoxColumn.Name = "phoneNrDataGridViewTextBoxColumn";
-            phoneNrDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // commentDataGridViewTextBoxColumn
-            // 
-            commentDataGridViewTextBoxColumn.DataPropertyName = "Comment";
-            commentDataGridViewTextBoxColumn.HeaderText = "Comment";
-            commentDataGridViewTextBoxColumn.MinimumWidth = 6;
-            commentDataGridViewTextBoxColumn.Name = "commentDataGridViewTextBoxColumn";
-            commentDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // statusDataGridViewTextBoxColumn
-            // 
-            statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
-            statusDataGridViewTextBoxColumn.HeaderText = "Status";
-            statusDataGridViewTextBoxColumn.MinimumWidth = 6;
-            statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            statusDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // serializedProductBvinsDataGridViewTextBoxColumn
-            // 
-            serializedProductBvinsDataGridViewTextBoxColumn.DataPropertyName = "SerializedProductBvins";
-            serializedProductBvinsDataGridViewTextBoxColumn.HeaderText = "SerializedProductBvins";
-            serializedProductBvinsDataGridViewTextBoxColumn.MinimumWidth = 6;
-            serializedProductBvinsDataGridViewTextBoxColumn.Name = "serializedProductBvinsDataGridViewTextBoxColumn";
-            serializedProductBvinsDataGridViewTextBoxColumn.Width = 125;
             // 
             // bookingBindingSource
             // 
@@ -192,7 +116,7 @@
             // Szerkeszt
             // 
             Szerkeszt.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            Szerkeszt.Location = new Point(274, 417);
+            Szerkeszt.Location = new Point(274, 468);
             Szerkeszt.Name = "Szerkeszt";
             Szerkeszt.Size = new Size(94, 29);
             Szerkeszt.TabIndex = 5;
@@ -203,7 +127,7 @@
             // Torles
             // 
             Torles.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            Torles.Location = new Point(386, 417);
+            Torles.Location = new Point(386, 468);
             Torles.Name = "Torles";
             Torles.Size = new Size(94, 29);
             Torles.TabIndex = 6;
@@ -213,7 +137,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(12, 417);
+            textBox1.Location = new Point(9, 468);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(229, 27);
             textBox1.TabIndex = 7;
@@ -222,17 +146,121 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(18, 394);
+            label1.Location = new Point(12, 436);
             label1.Name = "label1";
             label1.Size = new Size(52, 20);
             label1.TabIndex = 8;
             label1.Text = "Name:";
             // 
+            // button3
+            // 
+            button3.Location = new Point(18, 352);
+            button3.Name = "button3";
+            button3.Size = new Size(220, 30);
+            button3.TabIndex = 9;
+            button3.Text = "Kerámia bevonat";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(18, 388);
+            button4.Name = "button4";
+            button4.Size = new Size(220, 30);
+            button4.TabIndex = 10;
+            button4.Text = "Teljes autópolírozás";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // bookingIdDataGridViewTextBoxColumn
+            // 
+            bookingIdDataGridViewTextBoxColumn.DataPropertyName = "BookingId";
+            bookingIdDataGridViewTextBoxColumn.HeaderText = "BookingId";
+            bookingIdDataGridViewTextBoxColumn.MinimumWidth = 6;
+            bookingIdDataGridViewTextBoxColumn.Name = "bookingIdDataGridViewTextBoxColumn";
+            bookingIdDataGridViewTextBoxColumn.Width = 106;
+            // 
+            // moduleIdDataGridViewTextBoxColumn
+            // 
+            moduleIdDataGridViewTextBoxColumn.DataPropertyName = "ModuleId";
+            moduleIdDataGridViewTextBoxColumn.HeaderText = "ModuleId";
+            moduleIdDataGridViewTextBoxColumn.MinimumWidth = 6;
+            moduleIdDataGridViewTextBoxColumn.Name = "moduleIdDataGridViewTextBoxColumn";
+            moduleIdDataGridViewTextBoxColumn.Visible = false;
+            moduleIdDataGridViewTextBoxColumn.Width = 102;
+            // 
+            // startDataGridViewTextBoxColumn
+            // 
+            startDataGridViewTextBoxColumn.DataPropertyName = "Start";
+            startDataGridViewTextBoxColumn.HeaderText = "Start";
+            startDataGridViewTextBoxColumn.MinimumWidth = 6;
+            startDataGridViewTextBoxColumn.Name = "startDataGridViewTextBoxColumn";
+            startDataGridViewTextBoxColumn.Width = 69;
+            // 
+            // endDataGridViewTextBoxColumn
+            // 
+            endDataGridViewTextBoxColumn.DataPropertyName = "End";
+            endDataGridViewTextBoxColumn.HeaderText = "End";
+            endDataGridViewTextBoxColumn.MinimumWidth = 6;
+            endDataGridViewTextBoxColumn.Name = "endDataGridViewTextBoxColumn";
+            endDataGridViewTextBoxColumn.Width = 63;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            nameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            nameDataGridViewTextBoxColumn.Width = 78;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            emailDataGridViewTextBoxColumn.MinimumWidth = 6;
+            emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            emailDataGridViewTextBoxColumn.Width = 75;
+            // 
+            // phoneNrDataGridViewTextBoxColumn
+            // 
+            phoneNrDataGridViewTextBoxColumn.DataPropertyName = "PhoneNr";
+            phoneNrDataGridViewTextBoxColumn.HeaderText = "PhoneNr";
+            phoneNrDataGridViewTextBoxColumn.MinimumWidth = 6;
+            phoneNrDataGridViewTextBoxColumn.Name = "phoneNrDataGridViewTextBoxColumn";
+            phoneNrDataGridViewTextBoxColumn.Width = 95;
+            // 
+            // commentDataGridViewTextBoxColumn
+            // 
+            commentDataGridViewTextBoxColumn.DataPropertyName = "Comment";
+            commentDataGridViewTextBoxColumn.HeaderText = "Comment";
+            commentDataGridViewTextBoxColumn.MinimumWidth = 6;
+            commentDataGridViewTextBoxColumn.Name = "commentDataGridViewTextBoxColumn";
+            commentDataGridViewTextBoxColumn.Width = 103;
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
+            statusDataGridViewTextBoxColumn.HeaderText = "Status";
+            statusDataGridViewTextBoxColumn.MinimumWidth = 6;
+            statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            statusDataGridViewTextBoxColumn.Width = 78;
+            // 
+            // serializedProductBvinsDataGridViewTextBoxColumn
+            // 
+            serializedProductBvinsDataGridViewTextBoxColumn.DataPropertyName = "SerializedProductBvins";
+            serializedProductBvinsDataGridViewTextBoxColumn.HeaderText = "SerializedProductBvins";
+            serializedProductBvinsDataGridViewTextBoxColumn.MinimumWidth = 6;
+            serializedProductBvinsDataGridViewTextBoxColumn.Name = "serializedProductBvinsDataGridViewTextBoxColumn";
+            serializedProductBvinsDataGridViewTextBoxColumn.Visible = false;
+            serializedProductBvinsDataGridViewTextBoxColumn.Width = 188;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(817, 478);
+            ClientSize = new Size(1005, 529);
+            Controls.Add(button4);
+            Controls.Add(button3);
             Controls.Add(label1);
             Controls.Add(textBox1);
             Controls.Add(Torles);
@@ -264,6 +292,9 @@
         private BindingSource bindingSource1;
         private Button Szerkeszt;
         private TextBox textBox1;
+        private BindingSource bookingBindingSource;
+        private Label label1;
+        private Button button4;
         private DataGridViewTextBoxColumn bookingIdDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn moduleIdDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn startDataGridViewTextBoxColumn;
@@ -274,7 +305,5 @@
         private DataGridViewTextBoxColumn commentDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn serializedProductBvinsDataGridViewTextBoxColumn;
-        private BindingSource bookingBindingSource;
-        private Label label1;
     }
 }

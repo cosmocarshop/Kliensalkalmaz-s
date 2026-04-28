@@ -130,14 +130,14 @@ namespace Kliensalk
             // 
             dateTstart.Location = new Point(464, 72);
             dateTstart.Name = "dateTstart";
-            dateTstart.Size = new Size(250, 27);
+            dateTstart.Size = new Size(274, 27);
             dateTstart.TabIndex = 12;
             // 
             // dateTend
             // 
             dateTend.Location = new Point(464, 188);
             dateTend.Name = "dateTend";
-            dateTend.Size = new Size(250, 27);
+            dateTend.Size = new Size(274, 27);
             dateTend.TabIndex = 13;
             // 
             // button1
