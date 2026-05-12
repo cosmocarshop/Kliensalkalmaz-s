@@ -35,13 +35,12 @@ namespace Kliensalk
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            label5 = new Label();
             label6 = new Label();
             txtmegj = new TextBox();
             dateTstart = new DateTimePicker();
-            dateTend = new DateTimePicker();
             button1 = new Button();
             button2 = new Button();
+            listBox1 = new ListBox();
             SuspendLayout();
             // 
             // txtname
@@ -53,14 +52,14 @@ namespace Kliensalk
             // 
             // txtemail
             // 
-            txtemail.Location = new Point(12, 152);
+            txtemail.Location = new Point(11, 112);
             txtemail.Name = "txtemail";
             txtemail.Size = new Size(239, 27);
             txtemail.TabIndex = 1;
             // 
             // txtphone
             // 
-            txtphone.Location = new Point(12, 243);
+            txtphone.Location = new Point(12, 165);
             txtphone.Name = "txtphone";
             txtphone.Size = new Size(239, 27);
             txtphone.TabIndex = 2;
@@ -68,81 +67,78 @@ namespace Kliensalk
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Bookman Old Style", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(23, 53, 48);
             label1.Location = new Point(12, 36);
             label1.Name = "label1";
-            label1.Size = new Size(49, 20);
+            label1.Size = new Size(52, 19);
             label1.TabIndex = 3;
             label1.Text = "Name";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 129);
+            label2.Font = new Font("Bookman Old Style", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.FromArgb(23, 53, 48);
+            label2.Location = new Point(12, 89);
             label2.Name = "label2";
-            label2.Size = new Size(46, 20);
+            label2.Size = new Size(52, 19);
             label2.TabIndex = 4;
             label2.Text = "Email";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(11, 220);
+            label3.Font = new Font("Bookman Old Style", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.FromArgb(23, 53, 48);
+            label3.Location = new Point(11, 142);
             label3.Name = "label3";
-            label3.Size = new Size(50, 20);
+            label3.Size = new Size(55, 19);
             label3.TabIndex = 5;
             label3.Text = "Phone";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(11, 309);
+            label4.Font = new Font("Bookman Old Style", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.FromArgb(23, 53, 48);
+            label4.Location = new Point(12, 195);
             label4.Name = "label4";
-            label4.Size = new Size(88, 20);
+            label4.Size = new Size(93, 19);
             label4.TabIndex = 11;
             label4.Text = "Megjegyzes";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(464, 139);
-            label5.Name = "label5";
-            label5.Size = new Size(34, 20);
-            label5.TabIndex = 10;
-            label5.Text = "End";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(458, 36);
+            label6.Font = new Font("Bookman Old Style", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = Color.FromArgb(23, 53, 48);
+            label6.Location = new Point(330, 36);
             label6.Name = "label6";
-            label6.Size = new Size(40, 20);
+            label6.Size = new Size(47, 19);
             label6.TabIndex = 9;
             label6.Text = "Start";
             // 
             // txtmegj
             // 
-            txtmegj.Location = new Point(12, 332);
+            txtmegj.Location = new Point(11, 218);
             txtmegj.Name = "txtmegj";
             txtmegj.Size = new Size(239, 27);
             txtmegj.TabIndex = 8;
             // 
             // dateTstart
             // 
-            dateTstart.Location = new Point(464, 72);
+            dateTstart.CalendarForeColor = Color.FromArgb(23, 53, 48);
+            dateTstart.CalendarTitleForeColor = Color.FromArgb(23, 53, 48);
+            dateTstart.Font = new Font("Bookman Old Style", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dateTstart.Location = new Point(330, 57);
             dateTstart.Name = "dateTstart";
-            dateTstart.Size = new Size(274, 27);
+            dateTstart.Size = new Size(274, 25);
             dateTstart.TabIndex = 12;
-            // 
-            // dateTend
-            // 
-            dateTend.Location = new Point(464, 188);
-            dateTend.Name = "dateTend";
-            dateTend.Size = new Size(274, 27);
-            dateTend.TabIndex = 13;
             // 
             // button1
             // 
-            button1.Location = new Point(12, 409);
+            button1.Location = new Point(11, 272);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 14;
@@ -152,7 +148,7 @@ namespace Kliensalk
             // 
             // button2
             // 
-            button2.Location = new Point(128, 409);
+            button2.Location = new Point(111, 272);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 15;
@@ -160,17 +156,28 @@ namespace Kliensalk
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // listBox1
+            // 
+            listBox1.Font = new Font("Bookman Old Style", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            listBox1.ForeColor = Color.FromArgb(23, 53, 48);
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 19;
+            listBox1.Location = new Point(626, 62);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(150, 23);
+            listBox1.TabIndex = 16;
+            // 
             // Szerkesztes
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(249, 245, 231);
             ClientSize = new Size(800, 450);
+            Controls.Add(listBox1);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(dateTend);
             Controls.Add(dateTstart);
             Controls.Add(label4);
-            Controls.Add(label5);
             Controls.Add(label6);
             Controls.Add(txtmegj);
             Controls.Add(label3);
@@ -195,12 +202,11 @@ namespace Kliensalk
         private Label label2;
         private Label label3;
         private Label label4;
-        private Label label5;
         private Label label6;
         private TextBox txtmegj;
         private DateTimePicker dateTstart;
-        private DateTimePicker dateTend;
         private Button button1;
         private Button button2;
+        private ListBox listBox1;
     }
 }
