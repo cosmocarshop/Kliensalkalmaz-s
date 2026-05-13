@@ -40,7 +40,7 @@ namespace Kliensalk
             dateTstart = new DateTimePicker();
             button1 = new Button();
             button2 = new Button();
-            listBox1 = new ListBox();
+            comboBox1 = new ComboBox();
             SuspendLayout();
             // 
             // txtname
@@ -135,6 +135,7 @@ namespace Kliensalk
             dateTstart.Name = "dateTstart";
             dateTstart.Size = new Size(274, 25);
             dateTstart.TabIndex = 12;
+            dateTstart.ValueChanged += dateTstart_ValueChanged;
             // 
             // button1
             // 
@@ -156,16 +157,14 @@ namespace Kliensalk
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // listBox1
+            // comboBox1
             // 
-            listBox1.Font = new Font("Bookman Old Style", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            listBox1.ForeColor = Color.FromArgb(23, 53, 48);
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 19;
-            listBox1.Location = new Point(626, 62);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(150, 23);
-            listBox1.TabIndex = 16;
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(623, 57);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(151, 28);
+            comboBox1.TabIndex = 17;
             // 
             // Szerkesztes
             // 
@@ -173,7 +172,7 @@ namespace Kliensalk
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(249, 245, 231);
             ClientSize = new Size(800, 450);
-            Controls.Add(listBox1);
+            Controls.Add(comboBox1);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(dateTstart);
@@ -207,6 +206,6 @@ namespace Kliensalk
         private DateTimePicker dateTstart;
         private Button button1;
         private Button button2;
-        private ListBox listBox1;
+        private ComboBox comboBox1;
     }
 }
