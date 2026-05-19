@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="ClientAppSetup/ClientAppSetup.vdproj" Type="Installer" />
   <Project Path="Kliensalk/Kliensalk.csproj" />
 </Solution>
